@@ -1,5 +1,7 @@
 ## Installing minGW C/C++ compiler on Windows
+### Contact: Nasseef Abukamail (abukamai@ohio.edu)
 
+---
 1. Go to http://www.minGW.org
 2. Click on `Download Installer`
 This should download an executable program called `mingw-get-setup.exe`

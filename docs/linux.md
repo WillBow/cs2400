@@ -1,5 +1,8 @@
  # Ubuntu System Linux Commands, Compiling C++ Programs, & Remote Login
 
+### Contact: Nasseef Abukamail (abukamai@ohio.edu)
+
+---
 
 - [Linux command](#linux-command)
   - [Directory commands](#directory-commands)
