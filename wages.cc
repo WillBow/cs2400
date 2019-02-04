@@ -11,12 +11,13 @@
 
 using namespace std;
 
-//function prototypes
+const int MAX_HOURS = 40;
 
 int main(int argc, char const *argv[]) {
 
     //1
     double rate;
+    double wages;
 
     cout << "Enter the rate: ";
     cin >> rate;
@@ -26,8 +27,14 @@ int main(int argc, char const *argv[]) {
     cin >> hours;
 
     //3 calculation
-    double wages;
-    wages = rate * hours;
+    if (hours > 40) {   //overtime
+        //true block
+        wages = (hours - MAX_HOURS) * 1.5 * rate + MAX_HOURS * rate;
+    }
+    else {  //regular pay
+        //false block
+        wages = rate * hours;
+    }
 
     //4 output
     cout << "Wages = " << wages << endl;
