@@ -5,7 +5,7 @@
 
 ---
 
-  Welcome to CS 2400. In this class we will be writing programs in C++. In order to prepare for class, you need to install a C++ compiler and other software tools on your own machines. Please keep in mind that all the tools needed for the class are also available on our lab machines (Stocker 107 and 307A). The labs are open all day and can be accessed [remotely](#linux-commands-and-remote-loginfile-transfer). We will also be using [Git/GitHub](#gitgithub) for source/version control.
+  Welcome to CS 2400. In this class we will be writing programs in C++. In order to prepare for class, you need to install a C++ compiler and other software tools on your own machines. Please keep in mind that all the tools needed for the class are also available on our lab machines (Stocker 107 and 307A). The labs are open all day and can be accessed [remotely](#linux-commands-and-remote-loginfile-transfer). We will also be using [Git/GitHub](#gitgithub) for source/version control. Your projects (homework assignments) will be in the our GitHub [2400 classroom](https://github.com/2400)
 
   **All examples discussed in class will be posted on this site.**
 
@@ -68,6 +68,7 @@ To run your program:
 ---
 
 You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend either Visual Studio Code or Atom. They are both free and highly customizable. See below for other editors.
+
 - [Visual Studio Code](https://code.visualstudio.com/), highly recommended
 - [Atom Editor](https://atom.io)
 - [Sublime Text](https://www.sublimetext.com) $$
@@ -78,7 +79,7 @@ You need a good programming editor (**DO NOT USE WINDOWS Notepad**). I recommend
 
 ### VS Code Customization
 
-----
+---
 
 #### Extensions
 
