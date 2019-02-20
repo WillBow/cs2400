@@ -9,11 +9,6 @@
  * Extra credit due on Wednesday 10:45 AM. Be one of the first 10 students
  * to receive the extra credit.
  *
- * Write a function that has two integer parameters and returns the smallest
- * of the two parameters.
- * Write a main program to test it.
- * Upload your program to a public repository on GitHub and tag me in your
- * commit message (@nasseef)
  */
 
 #include <cstdlib>
