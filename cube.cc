@@ -12,10 +12,12 @@ using namespace std;
 
 //function prototypes (Function Declaration)
 int cube (int value);
-
+void printInstructions();
 int main()
 {
 	 int numberCubed, number = 2;
+	 printInstructions();
+	 printInstructions();
 	 //function call with number as argument
 	 numberCubed = cube(number);
 	 cout  << "The cube of "
@@ -37,3 +39,8 @@ int cube(int value) //Function heading
 	 return result; //result returned to main
 
 }
+
+void printInstructions() {
+	cout << "This program calculates the cube of a number" <<endl;
+}
+
