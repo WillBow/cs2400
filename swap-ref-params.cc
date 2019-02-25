@@ -14,7 +14,7 @@
 using namespace std;
 
 // function prototypes
-void swap(int &num1, int &num2);
+void swap(int &num1, int num2);
 
 int main(int argc, char const *argv[]) {
     int first, second;
@@ -28,21 +28,12 @@ int main(int argc, char const *argv[]) {
     cout << "After swap" << endl;
     cout << "first = " << first << endl;
     cout << "second = " << second << endl;
-    cout << "Read the bottom of this program file for extra credit" << endl;
     return 0;
 }  // main
-void swap(int &num1, int &num2) {
+void swap(int &num1, int num2) {
     int temp;
     temp = num1;
     num1 = num2;
     num2 = temp;
 }
 
-/* Extra credit: Due: Sunday, 2/24/2019, 11:59 PM.
- *               Write a function called metricToEnglish that takes two values (meters, centimeters)
- *               and returns feet and inches (hint: use reference parameters).
- *               Write a main program to test it.
- *               Upload your program to a public repository on GitHub and tag me (@nasseef) in your
- *               final commit message.
- *
- */
