@@ -1,5 +1,5 @@
 /*
-    File: input.cc
+    File: input_get.cc 
     Author: Mark May
     Date: 2/28/19
     Description: This program reads in from a file, using one call to the getline function at a time.
