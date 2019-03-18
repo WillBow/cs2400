@@ -43,7 +43,7 @@ void printArray(const int numbers[], int size) {
  *     Test your functions by calling them in the main function. These functions should work for
  *     any array size.
  *
- * To submit the extra credit, you must create a public repository on GitHub and tag me when
+ * To submit the extra credit, you must create a public repository on GitHub and tag me (@nasseef) when
  * you are done.  This extra credit is due at 11:59 PM Monday 3/18/2019.
  *
  * /
