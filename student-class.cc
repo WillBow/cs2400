@@ -59,7 +59,8 @@ void Student::setId(int newId) {
 
 
 /*
- * Extra credit (Due: Wednesday 4/10/2019 @ 11:59 PM): Complete the Student class by implementing and testing all
+ * Extra credit (Due: Wednesday 4/10/2019 @ 11:59 PM):
+ * Complete the Student class by implementing and testing all
  * the getters and setters.
  * In addition, add another member function of the class called output that
  * prints a Student object. For example, to print an object s you would execute
