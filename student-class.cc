@@ -13,6 +13,13 @@
 using namespace std;
 class Student {
 public:
+    //Default contructor
+    Student();
+    Student(string newName);
+    //The following two functions need to be implemented
+    Student(int newId);
+    Student(int newId, string newName, double newScore);
+
     //getters or accessors
     int getId();
     string getName();
@@ -20,6 +27,11 @@ public:
 
     //setters or mutators
     void setId(int newId);
+    void setName(string newName);
+    void setScore(double newScore);
+
+    //helper functions
+    void output();
 
 private:
     int id;  //id must be >= 0
@@ -34,11 +46,20 @@ private:
 
 int main(int argc, char const *argv[]) {
 
-    Student s;
+    Student s;  //assign default values automatically
+    s.output();
+
+    Student s2("Jim");
+    s2.output();
+
+    Student s3(123, "Ed", 57.5);
+
     s.setId(123);
     s.setId(-123);
-
-    cout << "Id: " << s.getId() << endl;
+    s.setName("Bob");
+    s.output();
+    s.setScore(85);
+    s.output();
 
 
 
@@ -46,9 +67,30 @@ int main(int argc, char const *argv[]) {
     return 0;
 }  // main
 
+//default constructor
+Student::Student() {
+    id = 0;
+    name = "N/A";
+    score = -1;
+}
+
+Student::Student(string newName) {
+    name = newName;
+    id = 0;
+    score = -1;
+}
 int Student::getId() {
     return id;
 }
+
+ string Student::getName(){
+    return name;
+}
+
+ double Student::getScore(){
+    return score;
+}
+
 
 void Student::setId(int newId) {
     if (newId >= 0)
@@ -57,17 +99,19 @@ void Student::setId(int newId) {
     }
 }
 
+void Student::setName(string newName){
+    name = newName;
+}
 
-/*
- * Extra credit (Due: Wednesday 4/10/2019 @ 11:59 PM):
- * Complete the Student class by implementing and testing all
- * the getters and setters.
- * In addition, add another member function of the class called output that
- * prints a Student object. For example, to print an object s you would execute
- * the following code:
- *          s.output(); //it should display id, name, and score
- *
- * Create a public repository on GitHub, push your code to the repository and
- * tag me (@nasseef) in the final commit message. Please make sure your program works
- * before you tag me.
- */
+ void Student::setScore(double newScore){
+     if (newScore >= 0)
+     {
+         score = newScore;
+     }
+}
+
+ void Student::output(){
+    cout << "Student: " << "(ID: " << id << ", Name: " << name
+         << ", Score: " << score << ")" << endl;
+
+ }
