@@ -2,7 +2,7 @@
  *        File: rectangle_main.cc
  *      Author: Nasseef Abukamail w/ additions by Will Bower
  *        Date: April 15, 2019
- * Description: Rectangle class
+ * Description: Rectangle class, now with added functions!
  */
 
 #include <iostream>
