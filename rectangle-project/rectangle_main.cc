@@ -1,8 +1,8 @@
 /*
  *        File: rectangle_main.cc
- *      Author: Nasseef Abukamail
+ *      Author: Nasseef Abukamail w/ additions by Will Bower
  *        Date: April 15, 2019
- * Description: Rectangle class. 
+ * Description: Rectangle class
  */
 
 #include <iostream>
@@ -44,7 +44,57 @@ int main(int argc, char const *argv[]) {
     r.setLength(50);
     r.setWidth(40);
     r.output();
-    cout << "Length " << r.getLength() << endl;
+    cout << "Length is " << r.getLength() << endl;
 
     return 0;
 }// main
+
+Rectangle::Rectangle()
+{
+    length = 0;
+    width = 0;
+}
+
+Rectangle::Rectangle(double newLength, double newWidth)
+{
+    length = newLength;
+    width = newWidth;
+}
+
+double Rectangle::getLength()
+{
+    return length;
+}
+
+double Rectangle::getWidth()
+{
+    return width;
+}
+
+void Rectangle::setLength(double newLength)
+{
+    if (newLength >= 0)
+    {
+        length = newLength;
+    }
+}
+
+void Rectangle::setWidth(double newWidth)
+{
+    if (newWidth >= 0)
+    {
+        width = newWidth;
+    }
+}
+
+void Rectangle::output()
+{
+    cout << getLength() << endl << getWidth() << endl;
+}
+
+double Rectangle::area()
+{
+    double area = width * length;
+
+    return area;
+}
